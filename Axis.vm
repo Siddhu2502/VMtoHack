@@ -1,0 +1,15 @@
+function Axis.axis 0
+push constant 20
+push constant 20
+push constant 20
+push constant 240
+call Screen.drawLine 4
+pop temp 0
+push constant 10
+push constant 230
+push constant 470
+push constant 230
+call Screen.drawLine 4
+pop temp 0
+push constant 0
+return

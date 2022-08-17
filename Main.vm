@@ -1,0 +1,104 @@
+function Main.main 6
+push constant 10433
+call Random.new 1
+pop local 3
+push constant 10
+pop local 2
+push local 2
+pop local 5
+push local 2
+call Array.new 1
+pop local 0
+push local 2
+call Array.new 1
+pop local 1
+push constant 200
+pop local 4
+label WHILE_EXP0
+push local 5
+push constant 1
+neg
+gt
+not
+if-goto WHILE_END0
+push local 5
+push local 0
+add
+push local 3
+push local 4
+call Random.randRange 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 5
+push local 1
+add
+push local 3
+push local 4
+call Random.randRange 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 5
+push constant 1
+sub
+pop local 5
+goto WHILE_EXP0
+label WHILE_END0
+call Axis.axis 0
+pop temp 0
+push local 0
+push local 1
+push local 2
+call Scatter.draw 3
+pop temp 0
+push constant 0
+push constant 25
+call Output.moveCursor 2
+pop temp 0
+push constant 19
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 0
+return

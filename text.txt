@@ -1,0 +1,65 @@
+ The code is a class that has two methods, rand and randRange.
+ The first method is used to generate random numbers in the range of 0-999.
+ The second method generates random numbers between 1-10.
+ The constructor creates an instance of Random with a seed value passed into it as an argument.
+ It then returns this object so that other objects can use it's methods without having to create their own instances of Random.
+ The code is a Random class that has two methods: rand() and randRange().
+ The first method, rand(), generates a random number between 0 and 32767.
+ The second method, randRange(), generates a random number between 0 and the range specified by the user.
+
+ It uses this seed value to create a random number by using rand().
+ It then stores this generated number as its field calledTime, increments its field calledTime by 1 each time it generates another random number, and finally calls dispose() when done generating numbers so memory can be freed up again for other purposes.
+ The code is an example of a class Random that uses the int rand() method to generate a random number.
+ The code also contains methods that addCallTime and dispose, which are used to manage memory allocation and release
+
+
+
+
+/*
+    ==> create constructor named random which gets the input seedIn
+    ==> The code creates a new instance of the Random class.
+    ==> The constructor takes an integer as its argument, which is used to seed the random number generator.
+    ==> The code then creates a variable called "calledTime" and initializes it with 0.
+    ==> It then returns this object that was just created in order to allow for chaining of methods on it later on in the program.
+    ==> The code attempts to generate a random number.
+    ==> The code attempts to generate a random number with the seed of "seedIn".
+    */
+
+
+    /*
+    ==> The code is a function that returns a random integer between 0 and 32767.
+    ==> The seed is initialized to 20251, which is the first prime number less than 32767.
+    ==> If the seed is less than zero, it will be incremented by one until it reaches 32767-1.
+    ==> The code starts with an if statement that checks whether or not the value of the seed has reached zero.
+    ==> If so, then it will increment the value of the seed by one until reaching 32767-1 (the last prime number).
+    ==> This ensures that there are no negative numbers in our range of integers we can generate from this function.
+    ==> The code attempts to return a random integer between 0 and 32767.
+    ==> The seed variable is initialized with the value 20251, which will be used as the starting point for generating a random number.
+    ==> If the seed variable is less than zero, then it will be incremented by 1 until it reaches 32767.
+    */
+
+
+    /*
+    ==> The code starts by declaring a variable called range.
+    ==> This variable is used to store the number of integers that are going to be generated.
+    ==> The code then declares an integer called mask and sets it equal to 1.
+    ==> The code starts by looping through the range of numbers, which is set at 2 in this case, while mask < range.
+    ==> Mask will start out as 1 and then increase by one each time the loop iterates until it reaches 2^(range-1).
+    ==> Then, after getting back from the loop, we have a value for ret equal to rand() & mask which is equivalent to (rand() % (2^mask)).
+    ==> After that we increment calledTime with one before continuing on into another iteration of the loop where we get a new random number b
+        etween 0 and our current value for ret multiplied by two plus one.
+    ==> After all iterations are done, we return ret which was calculated using rand() & mask again but now instead of being limited only up to 
+        our original value for ret multiplied by two plus one like before, it can go up as high as our original value for ret multiplied by two plus one times 
+        three because now there's no limit on how many iterations can happen inside this function!
+    ==> The code will generate a random number between 0 and range.
+    ==> The code will then increment the calledTime variable by 1 each time it is executed, until the value of ret equals range.
+    */
+
+
+
+    /*
+    ==> The code is calculating the time that has passed since the last call.
+    ==> The code starts by incrementing calledTime by 1, then it sets temp to be calledTime plus 1 and loops until temp is less than 9.
+    ==> Then it subtracts 9 from temp and returns that value as the result of getShift().
+    ==> The code would return the value of 9.
+     */

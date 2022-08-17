@@ -60,7 +60,7 @@ class VMTranslator(object):
     def __init__(self, vm_list, file_name):
         self.file_name = file_name
         self.vm_list = vm_list
-        self.no_comment_list = []
+        self.no_comment_list = [] 
         self.asm_list = ['//' + self.file_name]
         self.label_flag = 0  # Functions with the same name may exist in multiple vm files, label is identified by a file name preceded by the function name
         self.format_file()  # Remove comment and empty line

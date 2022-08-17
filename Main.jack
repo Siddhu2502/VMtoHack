@@ -1,0 +1,35 @@
+class Main {
+    function void main() {
+        var Array inputX;
+        var Array inputY;
+        var int ArrayLen;
+        var Random random;
+        var int intRange;
+        var int loop;
+    
+        //set seed for random number generator
+        let random = Random.new(10433);
+
+        let ArrayLen = 10;
+        let loop = ArrayLen;
+
+        let inputX = Array.new(ArrayLen);
+        let inputY = Array.new(ArrayLen);
+
+        let intRange = 200;
+
+        while (loop > -1){
+            let inputX[loop] = random.randRange(intRange);
+            let inputY[loop] = random.randRange(intRange);
+            let loop = loop - 1;
+        }
+
+
+        do Axis.axis();
+        do Scatter.draw(inputX,inputY,ArrayLen);
+        do Output.moveCursor(0,25);
+        do Output.printString("Sample Scatter plot");
+        return;
+
+    }
+}

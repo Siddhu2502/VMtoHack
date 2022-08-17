@@ -1,0 +1,88 @@
+function LineGraph.draw 1
+push argument 2
+push constant 1
+sub
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 1
+neg
+gt
+not
+if-goto WHILE_END0
+push constant 20
+push local 0
+push argument 0
+add
+pop pointer 1
+push that 0
+add
+push constant 230
+push local 0
+push argument 1
+add
+pop pointer 1
+push that 0
+sub
+push constant 3
+call Screen.drawCircle 3
+pop temp 0
+push local 0
+push constant 1
+sub
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push argument 2
+push constant 2
+sub
+pop local 0
+label WHILE_EXP1
+push local 0
+push constant 1
+neg
+gt
+not
+if-goto WHILE_END1
+push constant 20
+push local 0
+push argument 0
+add
+pop pointer 1
+push that 0
+add
+push constant 230
+push local 0
+push argument 1
+add
+pop pointer 1
+push that 0
+sub
+push constant 20
+push local 0
+push constant 1
+add
+push argument 0
+add
+pop pointer 1
+push that 0
+add
+push constant 230
+push local 0
+push constant 1
+add
+push argument 1
+add
+pop pointer 1
+push that 0
+sub
+call Screen.drawLine 4
+pop temp 0
+push local 0
+push constant 1
+sub
+pop local 0
+goto WHILE_EXP1
+label WHILE_END1
+push constant 0
+return
